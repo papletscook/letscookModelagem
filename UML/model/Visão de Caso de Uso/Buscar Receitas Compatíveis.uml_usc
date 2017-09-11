@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:c052f7a6-1a48-4fe6-aa39-a10bc5e18b3a'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Buscar Receitas Compatíveis'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <extend xmi:type='uml:Extend' xmi:uuid='urn:uuid:08859608-ba43-4b5e-9cde-652b514d8113'>
+   <extendedCase href='urn:uuid:82d4809c-e48d-4ead-ab52-69629704de61'/>
+   <extensionLocation href='urn:uuid:27fbec74-26d3-45f6-abfc-b68f34cdb931'/>
+  </extend>
+  <extend xmi:type='uml:Extend' xmi:uuid='urn:uuid:123af7f9-0ae8-48a7-b52d-b2d56b3b78d1'>
+   <extendedCase href='urn:uuid:e8b21503-f5b3-487d-afac-45f364724b36'/>
+   <extensionLocation href='urn:uuid:8f009c8e-d373-4d92-b79b-7826f7610ec8'/>
+  </extend>
+ </uml:UseCase>
+</xmi:XMI>

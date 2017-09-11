@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:830b0245-8511-4c49-850c-a1983fbde3a2'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Avaliar Receita'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <include xmi:type='uml:Include' xmi:uuid='urn:uuid:5e1d1eca-24e2-4346-bae4-0dfdc4180383'>
+   <addition href='urn:uuid:c5c791a4-7a00-4ec3-b11f-18acdd192e1c'/>
+  </include>
+ </uml:UseCase>
+</xmi:XMI>

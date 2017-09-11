@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:82d4809c-e48d-4ead-ab52-69629704de61'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Manipular Despensa'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <extensionPoint xmi:type='uml:ExtensionPoint' xmi:uuid='urn:uuid:27fbec74-26d3-45f6-abfc-b68f34cdb931'
+    isLeaf='false'
+    name='DefaultExtensionPoint'/>
+ </uml:UseCase>
+</xmi:XMI>

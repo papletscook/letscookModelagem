@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:484c4fb5-98a2-42a8-8f8d-ef848433ff69'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Comentar Receita'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <extend xmi:type='uml:Extend' xmi:uuid='urn:uuid:72849216-449b-4d3a-ae13-d6ff6f309725'>
+   <extendedCase href='urn:uuid:1151dd6c-acda-47ca-876c-02f08de565c5'/>
+   <extensionLocation href='urn:uuid:b087cc77-a155-4138-8a66-e3f0bfb5aa29'/>
+  </extend>
+ </uml:UseCase>
+</xmi:XMI>

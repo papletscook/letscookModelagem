@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:e8b21503-f5b3-487d-afac-45f364724b36'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Buscar Receitas'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <extensionPoint xmi:type='uml:ExtensionPoint' xmi:uuid='urn:uuid:8f009c8e-d373-4d92-b79b-7826f7610ec8'
+    isLeaf='false'
+    name='DefaultExtensionPoint'/>
+ </uml:UseCase>
+</xmi:XMI>

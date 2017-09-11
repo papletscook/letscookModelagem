@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:UseCase xmi:type='uml:UseCase' xmi:uuid='urn:uuid:1a7cd53b-1a61-44c9-9911-31a3e05bf280'
+   isAbstract='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Efetuar Login Gmail'
+   visibility='public'>
+  <subject href='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'/>
+  <extend xmi:type='uml:Extend' xmi:uuid='urn:uuid:cc60816d-bd52-45f3-9a62-27a58131dca2'>
+   <extendedCase href='urn:uuid:1c882c31-5f26-4e18-b986-e407182d24f1'/>
+   <extensionLocation href='urn:uuid:05b68d66-1685-4f96-a3d4-501a74b9ab5c'/>
+  </extend>
+ </uml:UseCase>
+</xmi:XMI>

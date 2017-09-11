@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20131001' xmlns:uml='http://www.omg.org/spec/UML/20131001'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.2.1.2.0'/>
+ <uml:Class xmi:type='uml:Class' xmi:uuid='urn:uuid:b330efe7-b41c-4f90-863f-ff48e2a11efe'
+   isAbstract='false'
+   isActive='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='Let&apos;s Cook'
+   visibility='public'>
+  <useCase href='urn:uuid:c5c791a4-7a00-4ec3-b11f-18acdd192e1c'/>
+  <useCase href='urn:uuid:ced75d96-d1c9-4b5d-adfb-98087c60096c'/>
+  <useCase href='urn:uuid:1245a9a3-b0e7-489a-aebc-2b34933ef2b9'/>
+  <useCase href='urn:uuid:1151dd6c-acda-47ca-876c-02f08de565c5'/>
+  <useCase href='urn:uuid:e19fd9f6-7820-41ef-a3bf-b3ea8dcb7ee0'/>
+  <useCase href='urn:uuid:484c4fb5-98a2-42a8-8f8d-ef848433ff69'/>
+  <useCase href='urn:uuid:830b0245-8511-4c49-850c-a1983fbde3a2'/>
+  <useCase href='urn:uuid:1c882c31-5f26-4e18-b986-e407182d24f1'/>
+  <useCase href='urn:uuid:7501454a-4018-434c-9061-8e826dd76eff'/>
+  <useCase href='urn:uuid:00c543e0-47dd-442a-a9b7-a05eb47ca266'/>
+  <useCase href='urn:uuid:e8b21503-f5b3-487d-afac-45f364724b36'/>
+  <useCase href='urn:uuid:82d4809c-e48d-4ead-ab52-69629704de61'/>
+  <useCase href='urn:uuid:c052f7a6-1a48-4fe6-aa39-a10bc5e18b3a'/>
+  <useCase href='urn:uuid:60176dc3-d913-4cc1-8e00-9ed2ba3a94f5'/>
+  <useCase href='urn:uuid:285cbfdd-263f-42b7-8cba-a2226a8135ab'/>
+  <useCase href='urn:uuid:6360bab7-e6c8-4e8e-8a17-29cbfc2a9f54'/>
+  <useCase href='urn:uuid:1a7cd53b-1a61-44c9-9911-31a3e05bf280'/>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:f4fe2afe-43aa-4c88-8377-2f004cf01f7b'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <type href='urn:uuid:1dfaf327-328a-4e5a-9909-f0ab3bcf5973'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:cfcd840c-894f-4258-aaf2-7ee27864c716'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <type href='urn:uuid:74fdefa1-cbb5-46df-8c0a-d4c0c53ed1fd'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:10c1015d-3664-4d64-9c41-ba5e0d794597'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='none'>
+   <type href='urn:uuid:4b6f488a-4ce3-4980-a29a-f7c81b72ff7c'/>
+  </ownedAttribute>
+  <ownedComment xmi:type='uml:Comment' xmi:uuid='urn:uuid:ea2170b8-3919-4141-96ae-d64eca9e4645'
+    body='uml_uc:Subject'/>
+ </uml:Class>
+</xmi:XMI>

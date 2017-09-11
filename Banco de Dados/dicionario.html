@@ -1,0 +1,244 @@
+<html><head>
+<title>Data dictionary: letscook</title>
+<style>
+    td,th {
+      text-align:center; 
+      vertical-align:middle;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    caption, th, td {
+      padding: .2em .8em;
+      border: 1px solid #fff;
+    }
+    caption {
+      background: #dbb768;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    th {
+      font-weight: bold;
+      background: #f3ce7d;
+    }
+    td {
+      background: #ffea97;
+    }
+  </style>
+</head>
+<body>
+<table><caption>Table: categoria_receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>nome</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome da Receita</td></tr>
+</table></br>
+<table><caption>Table: despensa_usuario - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>usuario_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Usuário</td></tr>
+</table></br>
+<table><caption>Table: etapa_receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>nome</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome da etapa</td></tr>
+<tr><td>ordem</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Ordem de execução da Etapa</td></tr>
+<tr><td>receita_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Receita</td></tr>
+</table></br>
+<table><caption>Table: ingrediente - 	</caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>nome</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome do Ingrediente</td></tr>
+<tr><td>foto</td><td>MEDIUMTEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Base64 da Foto do Ingrediente</td></tr>
+<tr><td>tipo</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Tipo Ingrediente Enumerado (Sólido/Líquido);</td></tr>
+</table></br>
+<table><caption>Table: passo_etapa - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>desc</td><td>MEDIUMTEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Descrição do Passo</td></tr>
+<tr><td>tipo</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Tipo do passo (Normal/Temporal)</td></tr>
+<tr><td>ordem</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Ordem de execução do passo</td></tr>
+<tr><td>etapa_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Etapa</td></tr>
+<tr><td>minPasso</td><td>DOUBLE</td><td>No</td><td>No</td><td>No</td><td></td><td>Minutos de duração para o passo</td></tr>
+<tr><td>dica</td><td>MEDIUMTEXT</td><td>No</td><td>No</td><td>No</td><td></td><td>Dica para realizar o passo.</td></tr>
+</table></br>
+<table><caption>Table: receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>descricao</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Descrição da Receita</td></tr>
+<tr><td>foto</td><td>MEDIUMTEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Base64 da Foto da Receita</td></tr>
+<tr><td>minsPreparo</td><td>INT(11)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Minutos necessários para preparar a Receita
+</td></tr>
+<tr><td>nome</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome da Receita</td></tr>
+<tr><td>status</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Estado da Receita (Enumerado)</td></tr>
+<tr><td>categoria_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Categoria da Receita</td></tr>
+<tr><td>criador_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Usuário</td></tr>
+</table></br>
+<table><caption>Table: usuario - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>dataNasc</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data de Nascimento do Usuário</td></tr>
+<tr><td>email</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>E-mail do Usuário</td></tr>
+<tr><td>senha</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>MD5 da senha do Usuário</td></tr>
+</table></br>
+<table><caption>Table: ingrediente_receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>quant</td><td>DOUBLE</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Quantidade do Ingrediente</td></tr>
+<tr><td>unidade_medida</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Unidade de Medida</td></tr>
+<tr><td>receita_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Receita</td></tr>
+<tr><td>ingrediente_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Ingrediente</td></tr>
+</table></br>
+<table><caption>Table: ingrediente_despensa - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>despensa_usuario_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Despensa do Usuários</td></tr>
+<tr><td>ingrediente_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Ingrediente</td></tr>
+</table></br>
+<table><caption>Table: lista_compras - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>data_criacao</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data da criação da lista de compras</td></tr>
+<tr><td>usuario_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Usuário</td></tr>
+</table></br>
+<table><caption>Table: item_lista - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>nome</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Nome do Item</td></tr>
+<tr><td>checked</td><td>TINYINT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Controle de execução do Item</td></tr>
+<tr><td>lista_compras_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Lista de Compras</td></tr>
+</table></br>
+<table><caption>Table: comentario_usuario_receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>receita_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Receita</td></tr>
+<tr><td>usuario_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Usuário</td></tr>
+<tr><td>conteudo</td><td>MEDIUMTEXT</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Conteúdo do Comentário</td></tr>
+<tr><td>status</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Estado do comentário (Enumerado)</td></tr>
+<tr><td>data_comentario</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data do Comentário</td></tr>
+</table></br>
+<table><caption>Table: avalicao_usuario_receita - </caption>
+<tr><td colspan="7">Attributes</td></tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Not Null</th>
+<th>PK</th>
+<th>FK</th>
+<th>Default</th>
+<th>Comment</th>
+</tr>
+<tr><td>id</td><td>BIGINT(20)</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td>Chave primária</td></tr>
+<tr><td>usuario_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira do Usuário</td></tr>
+<tr><td>receita_id</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>Yes</td><td></td><td>Chave estrangeira da Receita</td></tr>
+<tr><td>valor</td><td>BIGINT(20)</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Valor da Avaliação (1-5)</td></tr>
+<tr><td>data_avaliacao</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td></td><td>Data da Avaliação</td></tr>
+</table></br>
+</body></html>

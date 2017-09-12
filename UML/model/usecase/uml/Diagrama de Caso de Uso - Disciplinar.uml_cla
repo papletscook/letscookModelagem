@@ -42,18 +42,6 @@
     aggregation='none'>
    <type href='urn:uuid:2b4a9894-5a2e-494b-8d04-11c5b3714cfe'/>
   </ownedAttribute>
-  <ownedAttribute xmi:type='uml:Property' xmi:uuid='urn:uuid:0e075ab5-a803-4572-a3fd-8cdda762e3cb'
-    isDerived='false'
-    isDerivedUnion='false'
-    isID='false'
-    isLeaf='false'
-    isOrdered='false'
-    isReadOnly='false'
-    isStatic='false'
-    isUnique='true'
-    aggregation='none'>
-   <type href='urn:uuid:64e0b8a5-7f79-4e68-ba32-ab3c33ae50a0'/>
-  </ownedAttribute>
   <ownedComment xmi:type='uml:Comment' xmi:uuid='urn:uuid:81145bf7-1df2-43f4-9117-6366b8dd7cf1'
     body='uml_uc:Subject'/>
  </uml:Class>
